@@ -1,0 +1,35 @@
+{
+  "name": "weibo",
+  "version": "0.0.2",
+  "homepage": "https://weibo.com/",
+  "config": {
+    "title": "Weibo",
+    "icon": "https://play-lh.googleusercontent.com/TTKq2trnzgtoyM0jc1pyrrmXtA_Yd3A2hxubZtDahdZStYf4GPANZa-wjDb1ELHrGqh_=w480-h960-rw"
+  },
+  "keywords": [
+    "Social Networks"
+  ],
+  "author": {
+    "name": "Azot",
+    "url": "https://azot.so/"
+  },
+  "contributors": [
+    {
+      "name": "Vitaly Gashkov",
+      "email": "vitalygashkov@vk.com",
+      "url": "https://github.com/vitalygashkov"
+    }
+  ],
+  "license": "MIT",
+  "main": "weibo.js",
+  "files": [
+    "weibo.js"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@streamyx/api": "^0.2.8",
+    "@streamyx/core": "^2.3.2",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}

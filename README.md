@@ -1,3 +1,3 @@
-# @streamyx/extension-rutube
+# Azot Weibo Extension
 
-This extension is built-in and can be used without installation.
+This extension for [Azot](https://github.com/azot-labs/azot) lets you to download videos from the Chinese social network Weibo.

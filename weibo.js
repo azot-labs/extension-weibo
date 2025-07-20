@@ -1,13 +1,13 @@
 'use strict';
 
-const { defineExtension } = require('@streamyx/api');
+const { defineExtension } = require('azot');
 
 module.exports = defineExtension({
   name: 'weibo',
   fetchContentMetadata: async (url) => {
     const patterns = ['/:userId(\\d+)/:bid', '/detail/:mid'];
     const baseUrls = ['https://weibo.com/', 'https://m.weibo.cn'];
-    const result = common.execUrlPatterns(url, patterns, baseUrls);
+    const result = Azot.utils.execUrlPatterns(url, patterns, baseUrls);
     const params = result.pathname;
     const results = [];
     const id = params.bid || params.mid;

@@ -3,7 +3,6 @@
 const { defineExtension } = require('azot');
 
 module.exports = defineExtension({
-  name: 'weibo',
   fetchContentMetadata: async (url) => {
     const patterns = ['/:userId(\\d+)/:bid', '/detail/:mid'];
     const baseUrls = ['https://weibo.com/', 'https://m.weibo.cn'];

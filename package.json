@@ -21,11 +21,14 @@
     }
   ],
   "license": "MIT",
-  "main": "weibo.js",
+  "main": "dist/weibo.js",
   "files": [
-    "weibo.js"
+    "dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "dev": "azt dev",
+    "build": "azt build"
+  },
   "devDependencies": {
     "@types/node": "^24.0.15",
     "azot": "^0.9.0"

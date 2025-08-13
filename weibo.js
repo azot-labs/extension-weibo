@@ -1,9 +1,7 @@
-'use strict';
+import { defineExtension } from 'azot';
 
-const { defineExtension } = require('azot');
-
-module.exports = defineExtension({
-  fetchContentMetadata: async (url) => {
+export default defineExtension({
+  async fetchContentMetadata(url) {
     const patterns = ['/:userId(\\d+)/:bid', '/detail/:mid'];
     const baseUrls = ['https://weibo.com/', 'https://m.weibo.cn'];
     const result = Azot.utils.execUrlPatterns(url, patterns, baseUrls);
